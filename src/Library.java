@@ -20,9 +20,8 @@ public class Library {
         for (Book book : books){
             if (book.getTitle().equals(title))
                 return book;
-            else
-                return null;
         }
+        return null;
     }
 
     public void borrowBook(String title) throws BookNotFoundException, EmptyLibraryException{
