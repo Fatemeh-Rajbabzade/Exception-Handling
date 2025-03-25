@@ -51,14 +51,14 @@ public class Library {
     public void listBook() throws EmptyLibraryException{
         if (books.size() == 0)
         {
-            throw new EmptyLibraryException("Library is empty.")
+            throw new EmptyLibraryException("Library is empty.");
         }
         System.out.println("Book in the library:");
         for (Book book : books){
             System.out.println(book.toString());
         }
     }
-    
+
     public ArrayList<Book> getBooks(){
         return books;
     }
