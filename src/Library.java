@@ -47,7 +47,7 @@ public class Library {
     }
 
     //Print info
-    public void listBook() throws EmptyLibraryException{
+    public void listBooks() throws EmptyLibraryException{
         if (books.size() == 0)
         {
             throw new EmptyLibraryException("Library is empty.");
