@@ -41,7 +41,7 @@ public class Library {
     public void returnBook(String title) throws BookNotFoundException{
         Book book = findBook(title);
         if (book == null){
-            throw new BookNotFoundException("Cannot return Book with title" + title + "not found.");
+            throw new BookNotFoundException("Cannot return Book with title " + title + " not found.");
         }
         System.out.println("Successfullu returned : " +book.toString());
     }
